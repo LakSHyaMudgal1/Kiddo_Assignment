@@ -1,0 +1,284 @@
+app.config.ts(47,29): error TS4111: Property 'EXPO_PUBLIC_API_BASE_URL' comes from an index signature, so it must be accessed with ['EXPO_PUBLIC_API_BASE_URL'].
+src/actions/ActionDispatcher.ts(1,26): error TS2305: Module '"./types"' has no exported member 'SDUIAction'.
+src/actions/ActionDispatcher.ts(139,23): error TS2345: Argument of type '{ pathname: never; params: Record<string, string> | undefined; }' is not assignable to parameter of type 'Href<{ pathname: never; params: Record<string, string> | undefined; }>'.
+  Type '{ pathname: never; params: Record<string, string> | undefined; }' is not assignable to type '{ pathname: "/"; params?: RouteParamInput<"/">; } | { pathname: "/(auth)"; params?: RouteParamInput<"/(auth)">; } | { pathname: "/(auth)/login"; params?: RouteParamInput<...>; } | ... 15 more ... | { ...; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+    Type '{ pathname: never; params: Record<string, string> | undefined; }' is not assignable to type '{ pathname: "/product/[id]"; params: RouteParamInput<"/product/[id]">; }'.
+      Types of property 'params' are incompatible.
+        Type 'Record<string, string> | undefined' is not assignable to type 'RouteParamInput<"/product/[id]">'.
+          Type 'undefined' is not assignable to type 'RouteParamInput<"/product/[id]">'.
+            Type 'undefined' is not assignable to type 'StrictRouteParamsInputs<"/product/[id]">'.
+src/actions/ActionDispatcher.ts(173,15): error TS2322: Type '{ type: "OPEN_MODAL"; payload: OpenModalPayload; } | { type: "CLOSE_MODAL"; payload?: undefined; }' is not assignable to type 'never'.
+  Type '{ type: "OPEN_MODAL"; payload: OpenModalPayload; }' is not assignable to type 'never'.
+src/actions/handlers/navigationHandlers.ts(16,7): error TS2412: Type 'Record<string, unknown> | undefined' is not assignable to type 'RouteParamInput<"/"> | RouteParamInput<"/(auth)"> | RouteParamInput<"/(auth)/login"> | RouteParamInput<"/(tabs)"> | ... 15 more ... | undefined' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the type of the target.
+src/actions/handlers/navigationHandlers.ts(41,39): error TS2379: Argument of type '{ id: string; componentKey: string; snapPoints: string[]; props: Record<string, unknown> | undefined; }' is not assignable to parameter of type 'BottomSheetConfig' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'props' are incompatible.
+    Type 'Record<string, unknown> | undefined' is not assignable to type 'Record<string, unknown>'.
+      Type 'undefined' is not assignable to type 'Record<string, unknown>'.
+src/components/sdui/BannerHero.tsx(72,8): error TS6137: Cannot import type declaration files. Consider importing 'components/BannerHero' instead of '@types/components/BannerHero'.
+src/components/sdui/BannerHero.tsx(73,54): error TS6137: Cannot import type declaration files. Consider importing 'sdui-theme' instead of '@types/sdui-theme'.
+src/components/sdui/BannerHero.tsx(74,36): error TS6137: Cannot import type declaration files. Consider importing 'sdui-primitives' instead of '@types/sdui-primitives'.
+src/components/sdui/BannerHero.tsx(75,47): error TS6137: Cannot import type declaration files. Consider importing 'sdui-campaign' instead of '@types/sdui-campaign'.
+src/components/sdui/BannerHero.tsx(157,15): error TS2375: Type '{ color: string | undefined; }' is not assignable to type 'TextStyleResult' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'color' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/components/sdui/BannerHero.tsx(158,3): error TS2375: Type '{ color: string | undefined; fontSize: number | undefined; fontWeight: "400" | "500" | "600" | "700" | "800" | undefined; textAlign: SDUITextAlign | undefined; textTransform: SDUITextTransform | undefined; }' is not assignable to type 'TextStyleResult' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'color' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/components/sdui/BannerHero.tsx(180,9): error TS2322: Type 'number | { uri: string; }' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+  Type 'number' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+src/components/sdui/BannerHero.tsx(510,10): error TS2375: Type '{ countdown: SDUICountdown; timerTheme: SDUITimerTheme | undefined; theme: AppTheme; }' is not assignable to type 'CountdownTimerProps' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'timerTheme' are incompatible.
+    Type 'SDUITimerTheme | undefined' is not assignable to type 'SDUITimerTheme'.
+      Type 'undefined' is not assignable to type 'SDUITimerTheme'.
+src/components/sdui/BannerHero.tsx(645,12): error TS2375: Type '{ countdown: SDUICountdown; timerTheme: SDUITimerTheme | undefined; theme: AppTheme; }' is not assignable to type 'CountdownTimerProps' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'timerTheme' are incompatible.
+    Type 'SDUITimerTheme | undefined' is not assignable to type 'SDUITimerTheme'.
+      Type 'undefined' is not assignable to type 'SDUITimerTheme'.
+src/components/sdui/BannerHero.tsx(678,12): error TS2375: Type '{ countdown: SDUICountdown; timerTheme: SDUITimerTheme | undefined; theme: AppTheme; }' is not assignable to type 'CountdownTimerProps' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'timerTheme' are incompatible.
+    Type 'SDUITimerTheme | undefined' is not assignable to type 'SDUITimerTheme'.
+      Type 'undefined' is not assignable to type 'SDUITimerTheme'.
+src/components/sdui/BannerHero.tsx(725,12): error TS2375: Type '{ countdown: SDUICountdown; timerTheme: SDUITimerTheme | undefined; theme: AppTheme; }' is not assignable to type 'CountdownTimerProps' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'timerTheme' are incompatible.
+    Type 'SDUITimerTheme | undefined' is not assignable to type 'SDUITimerTheme'.
+      Type 'undefined' is not assignable to type 'SDUITimerTheme'.
+src/components/sdui/BannerHero.tsx(750,12): error TS2375: Type '{ countdown: SDUICountdown; timerTheme: SDUITimerTheme | undefined; theme: AppTheme; }' is not assignable to type 'CountdownTimerProps' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'timerTheme' are incompatible.
+    Type 'SDUITimerTheme | undefined' is not assignable to type 'SDUITimerTheme'.
+      Type 'undefined' is not assignable to type 'SDUITimerTheme'.
+src/components/sdui/BannerHero.tsx(858,15): error TS2538: Type 'undefined' cannot be used as an index type.
+src/components/sdui/DynamicCollection.tsx(103,8): error TS6137: Cannot import type declaration files. Consider importing 'components/DynamicCollection' instead of '@types/components/DynamicCollection'.
+src/components/sdui/DynamicCollection.tsx(104,36): error TS6137: Cannot import type declaration files. Consider importing 'sdui-theme' instead of '@types/sdui-theme'.
+src/components/sdui/DynamicCollection.tsx(169,13): error TS2322: Type '{ type: "ADD_TO_CART"; payload: { productId: string; variantId: string; sku: string; name: string; imageUrl: string; price: number; originalPrice: number | undefined; quantity: number; maxQuantity: number; }; }' is not assignable to type 'AppAction'.
+  The types of 'payload.originalPrice' are incompatible between these types.
+    Type 'number | undefined' is not assignable to type 'number'.
+      Type 'undefined' is not assignable to type 'number'.
+src/components/sdui/DynamicCollection.tsx(528,3): error TS2322: Type 'FC<ItemRendererProps<CollectionProductItem>>' is not assignable to type 'FC<ItemRendererProps<never>>'.
+  Types of property 'propTypes' are incompatible.
+    Type 'WeakValidationMap<ItemRendererProps<CollectionProductItem>> | undefined' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>> | undefined'.
+      Type 'WeakValidationMap<ItemRendererProps<CollectionProductItem>>' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>>' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+        Types of property 'item' are incompatible.
+          Type 'Validator<CollectionProductItem>' is not assignable to type 'Validator<never>'.
+            Type 'CollectionProductItem' is not assignable to type 'never'.
+src/components/sdui/DynamicCollection.tsx(529,3): error TS2322: Type 'FC<ItemRendererProps<CollectionCategoryItem>>' is not assignable to type 'FC<ItemRendererProps<never>>'.
+  Types of property 'propTypes' are incompatible.
+    Type 'WeakValidationMap<ItemRendererProps<CollectionCategoryItem>> | undefined' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>> | undefined'.
+      Type 'WeakValidationMap<ItemRendererProps<CollectionCategoryItem>>' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>>' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+        Types of property 'item' are incompatible.
+          Type 'Validator<CollectionCategoryItem>' is not assignable to type 'Validator<never>'.
+            Type 'CollectionCategoryItem' is not assignable to type 'never'.
+src/components/sdui/DynamicCollection.tsx(530,3): error TS2322: Type 'FC<ItemRendererProps<CollectionBrandItem>>' is not assignable to type 'FC<ItemRendererProps<never>>'.
+  Types of property 'propTypes' are incompatible.
+    Type 'WeakValidationMap<ItemRendererProps<CollectionBrandItem>> | undefined' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>> | undefined'.
+      Type 'WeakValidationMap<ItemRendererProps<CollectionBrandItem>>' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>>' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+        Types of property 'item' are incompatible.
+          Type 'Validator<CollectionBrandItem>' is not assignable to type 'Validator<never>'.
+            Type 'CollectionBrandItem' is not assignable to type 'never'.
+src/components/sdui/DynamicCollection.tsx(531,3): error TS2322: Type 'FC<ItemRendererProps<CollectionBannerItem>>' is not assignable to type 'FC<ItemRendererProps<never>>'.
+  Types of property 'propTypes' are incompatible.
+    Type 'WeakValidationMap<ItemRendererProps<CollectionBannerItem>> | undefined' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>> | undefined'.
+      Type 'WeakValidationMap<ItemRendererProps<CollectionBannerItem>>' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>>' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+        Types of property 'item' are incompatible.
+          Type 'Validator<CollectionBannerItem>' is not assignable to type 'Validator<never>'.
+            Type 'CollectionBannerItem' is not assignable to type 'never'.
+src/components/sdui/DynamicCollection.tsx(532,3): error TS2322: Type 'FC<ItemRendererProps<CollectionMysteryGiftItem>>' is not assignable to type 'FC<ItemRendererProps<never>>'.
+  Types of property 'propTypes' are incompatible.
+    Type 'WeakValidationMap<ItemRendererProps<CollectionMysteryGiftItem>> | undefined' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>> | undefined'.
+      Type 'WeakValidationMap<ItemRendererProps<CollectionMysteryGiftItem>>' is not assignable to type 'WeakValidationMap<ItemRendererProps<never>>' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+        Types of property 'item' are incompatible.
+          Type 'Validator<CollectionMysteryGiftItem>' is not assignable to type 'Validator<never>'.
+            Type 'CollectionMysteryGiftItem' is not assignable to type 'never'.
+src/components/sdui/FullScreenOverlay.tsx(70,8): error TS6137: Cannot import type declaration files. Consider importing 'components/FullScreenOverlay' instead of '@types/components/FullScreenOverlay'.
+src/components/sdui/FullScreenOverlay.tsx(71,37): error TS6137: Cannot import type declaration files. Consider importing 'sdui-theme' instead of '@types/sdui-theme'.
+src/components/sdui/FullScreenOverlay.tsx(72,36): error TS6137: Cannot import type declaration files. Consider importing 'sdui-campaign' instead of '@types/sdui-campaign'.
+src/components/sdui/FullScreenOverlay.tsx(73,36): error TS6137: Cannot import type declaration files. Consider importing 'sdui-primitives' instead of '@types/sdui-primitives'.
+src/components/sdui/FullScreenOverlay.tsx(126,3): error TS2375: Type '{ color: string; fontSize: number | undefined; fontWeight: "400" | "500" | "600" | "700" | "800" | undefined; textAlign: SDUITextAlign | undefined; textTransform: SDUITextTransform | undefined; }' is not assignable to type '{ color?: string; fontSize?: number; fontWeight?: "400" | "500" | "600" | "700" | "800"; textAlign?: "center" | "left" | "right"; textTransform?: "none" | "uppercase" | "lowercase" | "capitalize"; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'fontSize' are incompatible.
+    Type 'number | undefined' is not assignable to type 'number'.
+      Type 'undefined' is not assignable to type 'number'.
+src/components/sdui/FullScreenOverlay.tsx(258,13): error TS2322: Type 'number | { uri: string; }' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+  Type 'number' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+src/components/sdui/FullScreenOverlay.tsx(429,15): error TS2322: Type 'number | { uri: string; }' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+  Type 'number' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+src/components/sdui/FullScreenOverlay.tsx(447,15): error TS2322: Type 'number | { uri: string; }' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+  Type 'number' is not assignable to type 'string | AnimationObject | { uri: string; } | undefined'.
+src/components/sdui/FullScreenOverlay.tsx(521,12): error TS2375: Type '{ countdown: SDUICountdown; timerTheme: SDUITimerTheme | undefined; theme: AppTheme; }' is not assignable to type 'CountdownBlockProps' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'timerTheme' are incompatible.
+    Type 'SDUITimerTheme | undefined' is not assignable to type 'SDUITimerTheme'.
+      Type 'undefined' is not assignable to type 'SDUITimerTheme'.
+src/components/sdui/FullScreenOverlay.tsx(959,17): error TS2322: Type '{ backgroundColor: string; borderRadius: number; opacity: Animated.Value; transform: object[] | undefined; }' is not assignable to type 'false | RegisteredStyle<ViewStyle> | Value | WithAnimatedObject<ViewStyle> | AnimatedInterpolation<string | number> | WithAnimatedArray<...> | readonly (false | ... 5 more ... | undefined)[] | null | undefined'.
+  Types of property 'transform' are incompatible.
+    Type 'object[] | undefined' is not assignable to type 'string | Value | AnimatedInterpolation<string | number> | WithAnimatedArray<({ scaleX: AnimatableNumericValue; } & { scaleY?: never; ... 10 more ...; matrix?: never; }) | ... 11 more ... | ({ ...; } & { ...; })> | undefined'.
+      Type 'object[]' is not assignable to type 'string | Value | AnimatedInterpolation<string | number> | WithAnimatedArray<({ scaleX: AnimatableNumericValue; } & { scaleY?: never; ... 10 more ...; matrix?: never; }) | ... 11 more ... | ({ ...; } & { ...; })> | undefined'.
+        Type 'object[]' is not assignable to type 'WithAnimatedArray<({ scaleX: AnimatableNumericValue; } & { scaleY?: never; translateX?: never; translateY?: never; perspective?: never; rotate?: never; rotateX?: never; rotateY?: never; ... 4 more ...; matrix?: never; }) | ... 11 more ... | ({ ...; } & { ...; })>'.
+          The types returned by 'pop()' are incompatible between these types.
+            Type 'object | undefined' is not assignable to type 'WithAnimatedObject<{ scaleX: AnimatableNumericValue; } & { scaleY?: never; translateX?: never; translateY?: never; perspective?: never; rotate?: never; rotateX?: never; rotateY?: never; ... 4 more ...; matrix?: never; }> | ... 12 more ... | undefined'.
+              Type 'object' is not assignable to type 'WithAnimatedObject<{ scaleX: AnimatableNumericValue; } & { scaleY?: never; translateX?: never; translateY?: never; perspective?: never; rotate?: never; rotateX?: never; rotateY?: never; ... 4 more ...; matrix?: never; }> | ... 12 more ... | undefined'.
+src/components/sdui/ProductGrid2x2.tsx(63,8): error TS6137: Cannot import type declaration files. Consider importing 'components/ProductGrid2x2' instead of '@types/components/ProductGrid2x2'.
+src/components/sdui/ProductGrid2x2.tsx(64,36): error TS6137: Cannot import type declaration files. Consider importing 'sdui-theme' instead of '@types/sdui-theme'.
+src/components/sdui/ProductGrid2x2.tsx(203,13): error TS2322: Type '{ type: "ADD_TO_CART"; payload: { productId: string; variantId: string; sku: string; name: string; imageUrl: string; price: number; originalPrice: number | undefined; quantity: number; maxQuantity: number; }; }' is not assignable to type 'AppAction'.
+  The types of 'payload.originalPrice' are incompatible between these types.
+    Type 'number | undefined' is not assignable to type 'number'.
+      Type 'undefined' is not assignable to type 'number'.
+src/components/sdui/ProductGrid2x2.tsx(237,23): error TS2538: Type 'undefined' cannot be used as an index type.
+src/components/sdui/ProductGrid2x2.tsx(321,14): error TS2375: Type '{ rating: number; reviewCount: number | undefined; }' is not assignable to type '{ rating: number; reviewCount?: number; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'reviewCount' are incompatible.
+    Type 'number | undefined' is not assignable to type 'number'.
+      Type 'undefined' is not assignable to type 'number'.
+src/hooks/useNodeTheme.ts(28,8): error TS6137: Cannot import type declaration files. Consider importing 'sdui-primitives' instead of '@types/sdui-primitives'.
+src/hooks/useNodeTheme.ts(29,55): error TS6137: Cannot import type declaration files. Consider importing 'sdui-theme' instead of '@types/sdui-theme'.
+src/hooks/useSDUIPage.ts(3,39): error TS6137: Cannot import type declaration files. Consider importing 'sdui' instead of '@types/sdui'.
+src/mock/campaigns/backToSchool.ts(13,37): error TS6137: Cannot import type declaration files. Consider importing 'components/BannerHero' instead of '@types/components/BannerHero'.
+src/mock/campaigns/backToSchool.ts(14,41): error TS6137: Cannot import type declaration files. Consider importing 'components/ProductGrid2x2' instead of '@types/components/ProductGrid2x2'.
+src/mock/campaigns/backToSchool.ts(15,44): error TS6137: Cannot import type declaration files. Consider importing 'components/DynamicCollection' instead of '@types/components/DynamicCollection'.
+src/mock/campaigns/backToSchool.ts(16,44): error TS6137: Cannot import type declaration files. Consider importing 'components/FullScreenOverlay' instead of '@types/components/FullScreenOverlay'.
+src/mock/campaigns/backToSchool.ts(348,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/campaigns/backToSchool.ts(349,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/campaigns/backToSchool.ts(350,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/campaigns/backToSchool.ts(351,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/campaigns/backToSchool.ts(352,3): error TS2352: Conversion of type 'SDUINode<ProductGrid2x2Data>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'ProductGrid2x2Data' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'ProductGrid2x2Data'.
+src/mock/campaigns/backToSchool.ts(353,3): error TS2352: Conversion of type 'SDUINode<FullScreenOverlayData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'FullScreenOverlayData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'FullScreenOverlayData'.
+src/mock/campaigns/mysteryGiftCarnival.ts(13,37): error TS6137: Cannot import type declaration files. Consider importing 'components/BannerHero' instead of '@types/components/BannerHero'.
+src/mock/campaigns/mysteryGiftCarnival.ts(14,41): error TS6137: Cannot import type declaration files. Consider importing 'components/ProductGrid2x2' instead of '@types/components/ProductGrid2x2'.
+src/mock/campaigns/mysteryGiftCarnival.ts(15,44): error TS6137: Cannot import type declaration files. Consider importing 'components/DynamicCollection' instead of '@types/components/DynamicCollection'.
+src/mock/campaigns/mysteryGiftCarnival.ts(16,44): error TS6137: Cannot import type declaration files. Consider importing 'components/FullScreenOverlay' instead of '@types/components/FullScreenOverlay'.
+src/mock/campaigns/mysteryGiftCarnival.ts(389,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/campaigns/mysteryGiftCarnival.ts(390,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/campaigns/mysteryGiftCarnival.ts(391,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/campaigns/mysteryGiftCarnival.ts(392,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/campaigns/mysteryGiftCarnival.ts(393,3): error TS2352: Conversion of type 'SDUINode<ProductGrid2x2Data>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'ProductGrid2x2Data' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'ProductGrid2x2Data'.
+src/mock/campaigns/mysteryGiftCarnival.ts(394,3): error TS2352: Conversion of type 'SDUINode<FullScreenOverlayData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'FullScreenOverlayData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'FullScreenOverlayData'.
+src/mock/campaigns/summerPlayhouse.ts(13,37): error TS6137: Cannot import type declaration files. Consider importing 'components/BannerHero' instead of '@types/components/BannerHero'.
+src/mock/campaigns/summerPlayhouse.ts(14,41): error TS6137: Cannot import type declaration files. Consider importing 'components/ProductGrid2x2' instead of '@types/components/ProductGrid2x2'.
+src/mock/campaigns/summerPlayhouse.ts(15,44): error TS6137: Cannot import type declaration files. Consider importing 'components/DynamicCollection' instead of '@types/components/DynamicCollection'.
+src/mock/campaigns/summerPlayhouse.ts(16,44): error TS6137: Cannot import type declaration files. Consider importing 'components/FullScreenOverlay' instead of '@types/components/FullScreenOverlay'.
+src/mock/campaigns/summerPlayhouse.ts(346,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/campaigns/summerPlayhouse.ts(347,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/campaigns/summerPlayhouse.ts(348,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/campaigns/summerPlayhouse.ts(349,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/campaigns/summerPlayhouse.ts(350,3): error TS2352: Conversion of type 'SDUINode<ProductGrid2x2Data>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'ProductGrid2x2Data' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'ProductGrid2x2Data'.
+src/mock/campaigns/summerPlayhouse.ts(351,3): error TS2352: Conversion of type 'SDUINode<FullScreenOverlayData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'FullScreenOverlayData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'FullScreenOverlayData'.
+src/mock/fixtures/campaigns.ts(8,42): error TS6137: Cannot import type declaration files. Consider importing 'sdui-campaign' instead of '@types/sdui-campaign'.
+src/mock/fixtures/products.ts(8,38): error TS6137: Cannot import type declaration files. Consider importing 'components/ProductGrid2x2' instead of '@types/components/ProductGrid2x2'.
+src/mock/homepagePayload.ts(31,39): error TS6137: Cannot import type declaration files. Consider importing 'sdui' instead of '@types/sdui'.
+src/mock/homepagePayload.ts(33,37): error TS6137: Cannot import type declaration files. Consider importing 'components/BannerHero' instead of '@types/components/BannerHero'.
+src/mock/homepagePayload.ts(34,44): error TS6137: Cannot import type declaration files. Consider importing 'components/DynamicCollection' instead of '@types/components/DynamicCollection'.
+src/mock/homepagePayload.ts(337,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/homepagePayload.ts(338,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/homepagePayload.ts(339,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/homepagePayload.ts(342,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/homepagePayload.ts(345,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/homepagePayload.ts(346,3): error TS2352: Conversion of type 'SDUINode<DynamicCollectionData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'DynamicCollectionData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'DynamicCollectionData'.
+src/mock/homepagePayload.ts(349,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/mock/homepagePayload.ts(350,3): error TS2352: Conversion of type 'SDUINode<BannerHeroData>' to type 'SDUINode<Record<string, unknown>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'BannerHeroData' is not comparable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'BannerHeroData'.
+src/registry/SDUIRenderer.tsx(4,35): error TS1149: File name '/home/lakshya/Desktop/Kiddo_Assignment/src/registry/componentRegistry.ts' differs from already included file name '/home/lakshya/Desktop/Kiddo_Assignment/src/registry/ComponentRegistry.ts' only in casing.
+  The file is in the program because:
+    Matched by include pattern '**/*.ts' in '/home/lakshya/Desktop/Kiddo_Assignment/tsconfig.json'
+    Imported via './ComponentRegistry' from file '/home/lakshya/Desktop/Kiddo_Assignment/src/registry/SDUIRenderer.tsx'
+    Matched by include pattern '**/*.ts' in '/home/lakshya/Desktop/Kiddo_Assignment/tsconfig.json'
+src/registry/SDUIRenderer.tsx(28,25): error TS2352: Conversion of type 'RootStore' to type 'Record<string, unknown>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Index signature for type 'string' is missing in type 'RootStore'.
+src/registry/SDUIRenderer.tsx(64,6): error TS2375: Type '{ id: string; type: ComponentTypeKey; data: Record<string, unknown>; children: SDUINode<Record<string, unknown>>[] | undefined; analyticsLabel: string | undefined; testID: string; }' is not assignable to type 'SDUIBaseProps' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'analyticsLabel' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+src/registry/componentRegistry.ts(36,53): error TS6137: Cannot import type declaration files. Consider importing 'components' instead of '@types/components'.
+src/registry/validators.ts(22,37): error TS6137: Cannot import type declaration files. Consider importing 'components/BannerHero' instead of '@types/components/BannerHero'.
+src/registry/validators.ts(23,41): error TS6137: Cannot import type declaration files. Consider importing 'components/ProductGrid2x2' instead of '@types/components/ProductGrid2x2'.
+src/registry/validators.ts(24,44): error TS6137: Cannot import type declaration files. Consider importing 'components/DynamicCollection' instead of '@types/components/DynamicCollection'.
+src/registry/validators.ts(25,44): error TS6137: Cannot import type declaration files. Consider importing 'components/FullScreenOverlay' instead of '@types/components/FullScreenOverlay'.
+src/renderer/SDUIRenderer.tsx(97,60): error TS6137: Cannot import type declaration files. Consider importing 'sdui-primitives' instead of '@types/sdui-primitives'.
+src/renderer/SDUIRenderer.tsx(399,8): error TS2375: Type '{ id: string; type: ComponentTypeKey; data: Record<string, unknown>; children: SDUINode<Record<string, unknown>>[] | undefined; analyticsLabel: string | undefined; testID: string; }' is not assignable to type '{ id: string; type: string; data: unknown; children?: SDUINode<Record<string, unknown>>[]; analyticsLabel?: string; testID?: string; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'children' are incompatible.
+    Type 'SDUINode<Record<string, unknown>>[] | undefined' is not assignable to type 'SDUINode<Record<string, unknown>>[]'.
+      Type 'undefined' is not assignable to type 'SDUINode<Record<string, unknown>>[]'.
+src/services/api/client.ts(8,30): error TS4111: Property 'EXPO_PUBLIC_API_BASE_URL' comes from an index signature, so it must be accessed with ['EXPO_PUBLIC_API_BASE_URL'].
+src/services/api/sduiService.ts(2,52): error TS6137: Cannot import type declaration files. Consider importing 'sdui' instead of '@types/sdui'.
+src/store/middleware/logger.ts(27,5): error TS2578: Unused '@ts-expect-error' directive.
+src/store/slices/uiSlice.ts(70,39): error TS2322: Type 'null' is not assignable to type 'string | undefined'.
+src/store/slices/wishlistSlice.ts(26,30): error TS2322: Type 'null' is not assignable to type 'string | undefined'.
+src/theme/semanticColors.ts(66,3): error TS2322: Type '"#212121"' is not assignable to type '"#FFFFFF"'.
+src/theme/semanticColors.ts(67,3): error TS2322: Type '"#424242"' is not assignable to type '"#FAFAFA"'.
+src/theme/semanticColors.ts(68,3): error TS2322: Type '"#616161"' is not assignable to type '"#F5F5F5"'.
+src/theme/semanticColors.ts(69,3): error TS2322: Type '"#FFFFFF"' is not assignable to type '"#212121"'.
+src/theme/semanticColors.ts(72,3): error TS2322: Type '"#424242"' is not assignable to type '"#FFFFFF"'.
+src/theme/semanticColors.ts(73,3): error TS2322: Type '"#616161"' is not assignable to type '"#FFFFFF"'.
+src/theme/semanticColors.ts(74,3): error TS2322: Type '"#424242"' is not assignable to type '"#FFFFFF"'.
+src/theme/semanticColors.ts(75,3): error TS2322: Type '"#212121"' is not assignable to type '"#F5F5F5"'.
+src/theme/semanticColors.ts(77,3): error TS2322: Type '"#FFA726"' is not assignable to type '"#FF9800"'.
+src/theme/semanticColors.ts(78,3): error TS2322: Type '"#E65100"' is not assignable to type '"#FFE0B2"'.
+src/theme/semanticColors.ts(81,3): error TS2322: Type '"#FFFFFF"' is not assignable to type '"#212121"'.
+src/theme/semanticColors.ts(82,3): error TS2322: Type '"#E0E0E0"' is not assignable to type '"#757575"'.
+src/theme/semanticColors.ts(83,3): error TS2322: Type '"#BDBDBD"' is not assignable to type '"#9E9E9E"'.
+src/theme/semanticColors.ts(84,3): error TS2322: Type '"#757575"' is not assignable to type '"#BDBDBD"'.
+src/theme/semanticColors.ts(85,3): error TS2322: Type '"#212121"' is not assignable to type '"#FFFFFF"'.
+src/theme/semanticColors.ts(87,3): error TS2322: Type '"#FFB74D"' is not assignable to type '"#FB8C00"'.
+src/theme/semanticColors.ts(89,3): error TS2322: Type '"#616161"' is not assignable to type '"#EEEEEE"'.
+src/theme/semanticColors.ts(90,3): error TS2322: Type '"#9E9E9E"' is not assignable to type '"#BDBDBD"'.
+src/theme/semanticColors.ts(91,3): error TS2322: Type '"#FFA726"' is not assignable to type '"#FF9800"'.
+src/theme/semanticColors.ts(94,3): error TS2322: Type '"#388E3C"' is not assignable to type '"#E8F5E9"'.
+src/theme/semanticColors.ts(96,3): error TS2322: Type '"#FFA000"' is not assignable to type '"#FFFDE7"'.
+src/theme/semanticColors.ts(98,3): error TS2322: Type '"#D32F2F"' is not assignable to type '"#FFEBEE"'.
+src/theme/semanticColors.ts(100,3): error TS2322: Type '"#1976D2"' is not assignable to type '"#E3F2FD"'.
+src/theme/semanticColors.ts(102,3): error TS2322: Type '"#FFA726"' is not assignable to type '"#FF9800"'.
+src/theme/semanticColors.ts(103,3): error TS2322: Type '"#FF9800"' is not assignable to type '"#FB8C00"'.
+src/theme/semanticColors.ts(104,3): error TS2322: Type '"#616161"' is not assignable to type '"#E0E0E0"'.
+src/theme/semanticColors.ts(105,3): error TS2322: Type '"#616161"' is not assignable to type '"#EEEEEE"'.
+src/theme/semanticColors.ts(108,3): error TS2322: Type '"#F5F5F5"' is not assignable to type '"#424242"'.
+src/theme/semanticColors.ts(109,3): error TS2322: Type '"#BDBDBD"' is not assignable to type '"#9E9E9E"'.
+src/theme/semanticColors.ts(110,3): error TS2322: Type '"#212121"' is not assignable to type '"#FFFFFF"'.
+src/theme/semanticColors.ts(111,3): error TS2322: Type '"#FFA726"' is not assignable to type '"#FF9800"'.
